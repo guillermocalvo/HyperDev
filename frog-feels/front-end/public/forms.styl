@@ -1,0 +1,39 @@
+.sign-up
+  margin-top: 2.5rem
+  margin-bottom: 0
+
+form
+  input
+    // display: block
+    border: 2px tertiary solid
+    background-color: black
+    border-radius: 5px
+    padding: 10px
+    margin-bottom: 1rem
+    width: 30rem
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+    &:focus
+      outline: none
+      border-color: white
+    &.error
+      border-color: error
+    button.submit.primary-button
+      background-color: black
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+      margin-left: -2px
+
+section.signup-success
+  max-width: 420px
+  .instructions
+    font-family: plantin
+    font-style: italic
+    font-size: 2rem
+    line-height: 2.4rem
+
+.validating-button
+  margin: 0
+
+.bye
+  max-width: 100%

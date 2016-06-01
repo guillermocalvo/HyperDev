@@ -1,0 +1,16 @@
+script(type='text/javascript').
+  var palettes = !{JSON.stringify(palettes)};
+doctype html
+html
+  include head
+  body
+
+    include header
+    include about
+    include draw
+    include footer
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.4.4/randomColor.min.js")
+  script(src="client.js")

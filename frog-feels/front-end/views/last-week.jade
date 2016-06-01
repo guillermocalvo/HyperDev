@@ -1,0 +1,41 @@
+- S3_PATH = "https://frog-feels.s3.amazonaws.com"
+
+doctype html
+html
+  include head
+  body
+    include header
+    if admin
+      h2 Users
+      ul
+        each user in users
+          li= user
+      hr
+
+    section.last-week-review
+      h2 Last Week
+      each group in feelingGroups
+        .group
+          h1.topic= group.feeling
+          each drawing in group.drawings
+            .drawing
+              img(src="#{S3_PATH}#{drawing.path}")
+              if admin
+                button.primary-button.has-emoji.reject(data-path=drawing.path)
+                  span Reject 
+                  span.emoji 🌚
+
+    if admin
+      section
+        hr
+        p Ready to generate and send out this week's email?
+        button.primary-button.send-weekly-email.has-emoji(data-secret=emailSecret)
+          span Send Email 💌
+        h1.email-success-message.hidden
+          span Emails Sent! ✨
+          p don't forget to disable process.env.admin
+
+    include footer
+
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js")
+script(src="last-week.js")

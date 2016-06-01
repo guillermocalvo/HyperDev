@@ -1,0 +1,60 @@
+- keys = "https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A71bc4e4c-4845-48d7-ba7a-4171a4177b55%2Fkeys.svg"
+section.this-week.draw
+  h2 A feeling
+  p.topic= feeling
+
+// section.feeling
+
+section.palette
+  ul.colors
+    .color-well
+      li.color.black
+        .key-guide 1
+    .color-well
+      li.color.white
+        .key-guide 2
+    .color-well
+      li.color.palette-color.active
+        .key-guide 3
+    .color-well
+      li.color.palette-color
+        .key-guide 4
+    .color-well
+      li.color.palette-color
+        .key-guide 5
+    .color-well
+      li.color.palette-color
+        .key-guide 6
+    .color-well
+      li.color.shuffle(title="shuffle") 
+        span.label 
+          span (
+          span /
+          span ・
+          span ・
+          span )
+          span ノ
+        .key-guide 7
+
+section.drawing
+  - var rows = 20
+  while rows > 0
+    .row
+      - rows--
+      - var pixels = 20
+      while pixels > 0
+        .pixel
+        - pixels--
+
+canvas#canvas(width='400' height='400')
+
+section.save-drawing
+  p.primary-button.save-button Share Masterpiece →
+  p.primary-button.saving-button.hidden 
+    span.saving Saving
+
+include drawing-saved
+
+section.tips
+  img(src=keys class='keys-icon')
+  p 1-6 for colors. 7 for palettes.

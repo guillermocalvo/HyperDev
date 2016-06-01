@@ -1,0 +1,15 @@
+section.drawing-saved
+  p.saved-notice Nice Art!
+  p.saved-message I'll send out an email next week with the cool feelings everyone else drew 💌
+
+  section.sign-up
+    form(name="sign-up" action="/sign-up" method="post")
+      input(type="email" name="email" placeholder="you@space.jam")
+      button.submit.primary-button(type="submit" value="Sign Up") Sign Up →
+      p.primary-button.validating-button.hidden
+        span.saving Validating
+
+  section.sign-up.sign-up-success.hidden
+    p Thanks for signing up!
+
+  p.primary-button.draw-another Draw Another ↩︎

@@ -1,0 +1,117 @@
+secondary = #858585
+tertiary = #404040
+action = #E88EE5
+error = #af5eff
+success = #32cd32
+menlo = Menlo, Consolas, Monaco, monospace
+plantin = "Plantin", Georgia, Serif
+biff = "Biff", Helvetica, sans-serif
+biff-classic = 'https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A71bc4e4c-4845-48d7-ba7a-4171a4177b55%2FBiff-Classic'
+plantin-book = 'https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A71bc4e4c-4845-48d7-ba7a-4171a4177b55%2Fmplantin-light'
+plantin-italics = 'https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A71bc4e4c-4845-48d7-ba7a-4171a4177b55%2Fmplantin-lightitalic'
+plantin-bold = 'https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A71bc4e4c-4845-48d7-ba7a-4171a4177b55%2Fplantin-bold'
+
+// add biff font and alt
+@font-face
+  font-family: 'Biff'
+  src: url(biff-classic + '.eot')
+  src: url(biff-classic + '.eot?#iefix') format('embedded-opentype'),
+       url(biff-classic + '.woff') format('woff'),
+       url(biff-classic + '.ttf') format('truetype')
+
+
+@font-face
+  font-family: 'Plantin'
+  src: url(plantin-book + '.eot')
+  src: url(plantin-book + '.eot?#iefix') format('embedded-opentype'),
+       url(plantin-book + '.woff') format('woff'),
+       url(plantin-book + '.ttf') format('truetype')
+
+@font-face
+  font-family: 'Plantin'
+  font-style: italic
+  src: url(plantin-italics + '.eot')
+  src: url(plantin-italics + '.eot?#iefix') format('embedded-opentype'),
+       url(plantin-italics + '.woff') format('woff'),
+       url(plantin-italics + '.ttf') format('truetype')
+
+@font-face
+  font-family: 'Plantin'
+  font-style: normal
+  font-weight: bold
+  src: url(plantin-bold + '.eot')
+  src: url(plantin-bold + '.eot?#iefix') format('embedded-opentype'),
+       url(plantin-bold + '.woff') format('woff'),
+       url(plantin-bold + '.ttf') format('truetype')
+
+html
+  font-size: 62.5%
+  background-color: black
+  color: white
+  font-family: menlo
+
+body
+  font-size: 1.6rem
+  max-width: 800px
+  padding-left: 3rem
+  padding-right: 3rem
+  margin-left: auto
+  margin-right: auto
+
+a
+  color: white
+  text-decoration: none
+  // &.secondary-link
+  //   color: secondary
+  //   text-decoration: none
+  
+.secondary-link
+  cursor: pointer
+  color: secondary
+  border-bottom: 1px secondary solid
+  &:hover
+    border-bottom: none
+
+section,
+footer
+  margin-bottom: 8rem
+
+h1
+  font-family: plantin
+
+pre
+  font-size: 1.9rem
+  line-height: 3rem
+  word-wrap: break-word
+
+h2
+  font-weight: normal
+  color: secondary
+  font-size: 1.6rem
+  margin-bottom: 0.4rem
+
+ul
+  padding-left: 0
+
+li
+  list-style: none
+  img
+    image-rendering: crisp-edges
+    image-rendering: pixelated
+
+.topic
+  font-family: plantin
+  font-style: italic
+  margin-top: 0
+
+footer
+  margin-top: 4rem
+  p
+    margin-bottom: 2rem
+
+.hidden
+  display: none !important
+
+.action
+  color: action
+  text-decoration: underline
