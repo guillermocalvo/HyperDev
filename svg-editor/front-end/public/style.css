@@ -1,0 +1,72 @@
+/* styles */
+/* called by your view template */
+
+/* p.s. vendor prefixes are added automatically */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+h1 {
+  font-family: "Times New Roman", Georgia, Serif;
+  text-shadow: 2px 8px 12px #444;
+  color: #621;
+}
+pre {
+  white-space: pre-wrap;
+  color: #933;
+}
+
+svg {
+  background-color: #dde;
+  border-radius: 5px;
+  border: 2px dotted white;
+  margin-top: 20px;
+  box-shadow: 7px 7px 12px #444;
+}
+
+
+input,
+textarea,
+input[type=radio] + label,
+input[type=button] {
+  border: 1px solid #C3C3C3;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+  max-width: 240px;
+  width: 100%;
+}
+
+a + a {
+  padding: 10px;
+}
+
+input[type=color], input[type=button], input[type=radio] + label {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+}
+input[type=radio] {
+  display: none;
+}
+input[type=radio] + label, input[type=button] {
+  display: inline-block;
+  text-align: center;
+}
+input[type=radio]:checked + label {
+  background-color: #606060;
+  border-width: 4px;
+}
+input[type=range] {
+  width: 50px;
+  transform: rotate(-90deg);
+}
+input[type=number] {
+  width: 75px;
+}

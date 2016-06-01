@@ -1,0 +1,52 @@
+<!-- view template -->
+<!-- called from your routes in server.js -->
+
+<!-- templating docs: http://mozilla.github.io/nunjucks/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG editarrrrgh</title>
+    <meta name="description" content="An SVG editor made with HyperWeb">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <form id="controls">
+      <div>
+      <!-- TODO: color pickers don't work in IE or Safari -->
+        <input type="color" id="fg" name="fg" value="#FF0000">
+        <input type="range" id="fillOpacity" name="fillOpacity" min="0" max="1" step="0.01" value="1">
+        <input type="color" id="bg" name="bg" value="#333333">
+        <input type="range" id="strokeOpacity" name="strokeOpacity" min="0" max="1" step="0.01" value="1">
+
+        <input type="number" id="strokeWidth" name="strokeWidth" min="0" value="1" required>
+        <label for="strokeWidth">px</label>
+      </div>
+      
+      <div>
+        <input type="radio" id="circle" name="tool" value='circle'><label for="circle">&#9675;</label>
+        <input type="radio" id="ellipse" name="tool" value='ellipse'><label for="ellipse">&#11094;</label>
+        <input type="radio" id="rectangle" name="tool" value='rectangle'><label for="rectangle">&#x25FB;</label>
+        <input type="radio" id="line" name="tool" value='line'><label for="line">&#x2571;</label>
+        <input type="radio" id="polygon" name="tool" value="polygon"><label for="polygon">&#x2606;</label>
+        <input type="radio" id="hand" name="tool" value="hand"><label for="hand">&#x270B;</label>
+        <input type="button" value="Clear" id="clear">
+      </div>
+    </form>
+    
+    <svg id="main" height=480 width=640>
+    </svg>
+
+    <script
+			  src="https://code.jquery.com/jquery-2.2.2.min.js"
+			  integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="/client.js"></script>
+    <script src="/localStorage.js"></script>
+
+  </body>
+</html>
