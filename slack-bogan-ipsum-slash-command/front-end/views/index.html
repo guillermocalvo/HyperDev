@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Holy dooley!</title>
+    <meta name="description" content="A dag Slack app made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperweb.space/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        {{title}}!
+      </h1>
+      <img alt="A Bogan"
+             src="https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1:d1a35498-83b0-4e43-9a2c-00395b44100f/bogan-wide.jpg" />
+    </header>
+
+    <main>
+      <section class="quotes">
+        <p class="bold">Do you have to fossick in Slack to find heaps of jems like these?</p>
+        <ul id="quotes">
+        </ul>
+      </section>
+      <section class="add-to-slack">
+        <p>Don't chuck a sickie, just invite this bloke</p>
+        <a id="add-to-slack"
+           href="/auth">
+          <img alt="Add to Slack" height="40" width="139"
+               src="https://platform.slack-edge.com/img/add_to_slack.png"
+               srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <a id="remix"
+         href="https://hyperdev.com/#!/projects/wheat-flower">
+        Remix this in HyperDev
+      </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
