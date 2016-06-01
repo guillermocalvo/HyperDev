@@ -1,0 +1,41 @@
+<!-- view template -->
+<!-- called from your routes in server.js -->
+
+<!-- templating docs: http://mozilla.github.io/nunjucks/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta name="description" content="Practice reading ASL fingerspelling.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id=container>
+      <h1>
+        Practice the ASL fingerspelled alphabet
+      </h1>
+      <div id=displayscreen></div>
+      <input id=slider type=range max=200 min=0 defaultValue=50 step=1 list="ticks">
+      <datalist id="ticks">
+        <option>50</option>
+        <option>100</option>
+        <option>150</option>
+      </datalist>
+      <form id=answerForm><input id=answer placeholder="Type the word you see above, then press enter." autocomplete="off"></form>
+      <div id=results></div>
+    </div>
+    <footer>
+      Made in <a href="https://hyperdev.com/#!/project/dawn-haze">HyperDev</a>
+      <br>
+      Art by <a href="http://www.lifeprint.com/asl101/fingerspelling/abc-gifs/index.htm">LifePrint</a>
+      
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+/* styles */
+/* called by your view template */
+
+/* p.s. vendor prefixes are added automatically */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1em;
+}
+
+input {
+  padding: 5px;
+  width: 350px;
+  margin: 0px;
+}
+
+#answer {
+  border: 1px solid #C3C3C3;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+#container {
+  border: 1px solid GREY;
+  border-radius: 9px;
+  box-shadow: 2px 2px 10px gray;
+  margin: auto;
+  padding: 1em;
+  width: calc(350px + 2em);
+}
+
+#container h1 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0;
+  text-align: center;
+}
+
+#displayscreen {
+  width: 350px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid GREY;
+  border-radius: 3px;
+  background: no-repeat center center;
+  background-size: contain;
+}
+
+.loading-indicator {
+  color: gray;
+}
+
+#results {
+  margin-top: 0.5em;
+}
+.result {
+  padding: 0.25em;
+}
+
+.target-word{
+  color: FORESTGREEN;
+  font-weight: bold;
+}
+
+.submitted-word {
+  color: auto;
+  font-weight: bold;
+}
+
+.submitted-word.correct {
+  color: FORESTGREEN;
+}
