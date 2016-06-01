@@ -1,0 +1,46 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HyperDev Trello Webhooks</title>
+    <meta name="description" content="A cool Trello Webhook Server made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.space/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Trello Webhooks
+      </h1>
+    </header>
+
+    <main>
+      <section>
+        <p>Move the cards around on the example <a href="https://trello.com/invite/b/yq3o4Y1u/80930e588269335357e6d176f28496c7/hyperdev-trello-webhook-server-example" target="_new">Trello board</a>, see updates listed below.</p>
+      </section>
+      <section class="updates">
+        <p><b>Updates:</b></p>
+        <ul id="updates">
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://hyperdev.com/#!/project/zinc-chopper">
+        Remix this in HyperDev
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>

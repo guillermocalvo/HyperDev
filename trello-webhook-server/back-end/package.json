@@ -1,0 +1,24 @@
+{
+  "name": "trello-webhook-server",
+  "version": "3.1.0",
+  "description": "A Trello webhook server",
+  "keywords": [
+    "trello",
+    "webhook"
+  ],
+  "author": "Greg Walker <michael.walker@gsa.gov>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/18F/trello-webhook-server.git"
+  },
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"restify": "*",
+    "chalk": "^1.1.3",
+    "request": "^2.71.0"
+	},
+  "license": "CC0-1.0"
+}
