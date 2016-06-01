@@ -1,0 +1,25 @@
+{
+	"name": "googlesheets-dashboard-app",
+	"version": "0.0.2",
+	"description": "Data dashboard using Google Sheets and Google Charts",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+    "express": "^4.12.4",
+    "google-spreadsheets": "*"
+	},
+	"engines": {
+		"node": "5.4.1"
+	},
+	"keywords": [
+		"node",
+		"hyperdev",
+		"express",
+		"googlesheets",
+		"charts",
+		"dashboard"
+	],
+	"license": "MIT"
+}

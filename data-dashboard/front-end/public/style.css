@@ -1,0 +1,42 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  background-color: black;
+  color: #BBBBBB;
+}
+
+body a {
+  color: #BBBBBB;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  display:inline;
+}
+
+#charts span {
+  position: absolute;
+}
+
+#charts span img {
+  border: 1px solid #c0c0c0;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
