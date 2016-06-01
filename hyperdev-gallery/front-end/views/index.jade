@@ -1,0 +1,59 @@
+head
+  include seo-meta
+  
+body
+  header.header
+    h1 Made with HyperDev
+    a(href="https://hyperdev.com", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/homepage/h1'});")
+      .button Start Coding
+    a(href="https://hyperdev.com/about/", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/about/nav-link'});")
+      .nav-link About
+    a(href="https://hyperdev.com/blog/", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/blog/nav-link'});")
+      .nav-link Blog
+    a(href="https://hyperdev.com/help/faqs/", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/help/nav-link'});")
+      .nav-link Help
+      
+  main
+    
+    // for each category
+    
+    each category in categories
+      section
+        header.category
+          a(name="#{category.metaName}")
+          h2.category-name=category.name
+          img(src=category.img)
+          if category.description
+            p=category.description
+    
+        ul.projects(id="#{category.metaName}")
+          
+          // for each project in category
+        
+          each project in projects
+            if project.categoryId == category.id
+              li.project
+                a(href="https://hyperdev.com/#!/project/#{project.editorUrl}", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/gallery/project-#{project.projectId}'});")
+                  .name=project.name
+                .description=project.description
+                .users
+                  each user in project.users
+                    .user(title=user.name data-tooltip=user.name data-tooltip-left=true)
+                      img(width=30 height=30 src=user.avatar)
+                .meta
+                  if project.likes
+                    .likes(title="Likes" data-tooltip="Likes" data-tooltip-left="true")=project.likes
+                  if project.remixes
+                    .remixes=project.remixes
+                  div.show(title="View running app" data-tooltip="View running app" data-tooltip-left="true")
+                    a(target="_new" href="https://#{project.editorUrl}.hyperdev.space/", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/gallery/project-#{project.projectId}'});")
+
+  footer
+    a(href="http://support.hyperweb.space/c/the-gallery", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/gallery-submit/footer'});")
+      span Submit projects to be featured
+    
+    a(href="https://hyperdev.com/#!/project/cosmic-flower", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/remix/footer'});")
+      span Remix this in HyperDev
+
+script(src='https://code.jquery.com/jquery-2.2.1.min.js', integrity='sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=', crossorigin='anonymous')
+script(src='/community/client.js')
