@@ -1,0 +1,30 @@
+{
+	"name": "slack-sentiment-analysis",
+	"version": "0.0.1",
+	"description": "Sentiment scoring from Slack channels",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.12.4",
+		"nunjucks": "^1.3.4",
+		"aws-sdk": "^2.2.12",
+		"synchronize": "^0.9.14",
+		"q": "*",
+		"sentiment": "*",
+		"body-parser": "*",
+		"underscore": "*"
+	},
+	"engines": {
+		"node": "4.4.3"
+	},
+	"keywords": [
+		"node",
+		"hyperdev",
+		"express",
+		"slack",
+		"sentiment"
+	],
+	"license": "MIT"
+}
