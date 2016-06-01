@@ -1,0 +1,34 @@
+<!-- view template -->
+<!-- called from your routes in server.js -->
+
+<!-- templating docs: http://mozilla.github.io/nunjucks/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta name="description" content="A cool thing made with HyperWeb">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <canvas width=480 height=320>
+    </canvas>
+<p>Would you like to play a game?</p>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/client.js"></script>
+
+    <div>
+      {% for score in scores %}
+        {% block score %}
+            <h2>
+              {{score.name}}
+              {{score.score}}
+            </h2>
+        {% endblock %}
+      {% endfor %}
+    </div>
+  </body>
+</html>

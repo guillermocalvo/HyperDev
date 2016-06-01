@@ -1,0 +1,43 @@
+/* styles */
+/* called by your view template */
+
+/* p.s. vendor prefixes are added automatically */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: pink;
+}
+
+h3 {
+  color: lightseagreen;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  border: 1px solid #C3C3C3;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  margin-top: 20px;
+}
+
+canvas {
+  border: 1px solid black;
+}
