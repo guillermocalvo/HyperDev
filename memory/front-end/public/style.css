@@ -1,0 +1,287 @@
+x/* styles */
+/* called by your view template */
+
+/* p.s. vendor prefixes are added automatically */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  background-color: darkblue;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #C0C0C0;
+}
+
+h3 {
+  color: grey;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  border: 1px solid #C3C3C3;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  margin-top: 20px;
+}
+
+.page {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.elapsed {
+  color: gold;
+  margin-left: 190px;
+}
+
+.message {
+  width: 600px;
+  height: 2.5em;
+  color: white;
+}
+
+.time {
+  color: gold;
+}
+
+.board {
+  width: 600px;
+}
+
+.card {
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 6px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  border: 4px solid white;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  /*opacity: 1;*/
+}
+
+.card1 {
+  background-color: brown;
+}
+.card2 {
+  background-color: purple;
+}
+.card3 {
+  background-color: teal;
+}
+.card4 {
+  background-color: salmon;
+}
+.card5 {
+  background-color: yellow;
+}
+.card6 {
+  background-color: Magenta;
+}
+.card7 {
+  background-color: green;
+}
+.card8 {
+  background-color: lightgreen;
+}
+
+.card1cat {
+  background-image: url("https://pbs.twimg.com/profile_images/3550696043/d144ce5f545275588a45f296ebd3f027.jpeg");
+}
+
+.card2cat {
+  background-image: url("https://static-s.aa-cdn.net/img/ios/640105021/14ac96864946eed2ffe3c3b6e6a3eece?v=1");
+}
+
+.card3cat {
+  background-image: url("https://static-s.aa-cdn.net/img/ios/461572151/6bb370ca7f70def2963cc334fb4e9bbf?v=1");
+}
+
+.card4cat {
+  background-image: url("https://pbs.twimg.com/profile_images/621359695312363520/1BUuQJcq.jpg");
+}
+
+.card5cat {
+  background-image: url("https://static-s.aa-cdn.net/img/gp/20600004738603/1tqGSNrJM73z9waxWb0wehy9G3f3C5fXW62pJiylNZfxgtS0Cq_ZO7r5WiI2qjjCZnw=w300?v=1");
+}
+
+.card6cat {
+  background-image: url("http://dykn.com/wp-content/uploads/2012/07/dailyworldfacts.jpg");
+}
+
+.card7cat {
+  background-image: url("https://pbs.twimg.com/profile_images/591705916392759296/WNiT3izn.jpg");
+}
+
+.card8cat {
+  background-image: url("https://static-s.aa-cdn.net/img/ios/608437635/bc3ef706f0765b2e12ba224e82cea980?v=1");
+}
+
+.card1frozen {
+  background-image: url("http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/large/public/2014/09/29/frozen.jpg");
+}
+
+.card2frozen {
+  background-image: url("http://s2.dmcdn.net/DKEGM/1280x720-XwN.jpg");
+}
+
+.card3frozen {
+  background-image: url("http://media.virbcdn.com/cdn_images/resize_1024x1365/c5/a72fec2b3510f775-Frozen_Hans_finished.jpg");
+}
+
+.card4frozen {
+  background-image: url("https://wallpaperscraft.com/image/frozen_kristoff_main_character_93147_1600x1200.jpg");
+}
+
+.card5frozen {
+  background-image: url("http://images.m-magazine.com/uploads/posts/image/45343/disney-contemporary-resort-frozen-olaf.jpg");
+}
+
+.card6frozen {
+  background-image: url("http://mlb-s1-p.mlstatic.com/personagens-disney-en-pelucias-afins-18209-MLB20152577281_082014-Y.jpg");
+}
+
+.card7frozen {
+  background-image: url("http://img3.wikia.nocookie.net/__cb20140219173000/disney/images/8/8c/Elsa-anna-frozen-e1385489889559.jpg");
+}
+
+.card8frozen {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/0e/de/6e/0ede6e4853720f5e1f5ce9ac64fac4ce.jpg");
+}
+
+.card1lettere {
+  /* Grazia Panu */
+  background-image: url("https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c29.103.369.369/s160x160/376081_300449136662212_738842783_n.jpg?oh=b0538d65cacba542300fee524922ae02&oe=5687A9FD&__gda__=1456485437_4c6d5df0ba9d6a15d4c962617f3b8945");
+}
+
+.card2lettere {
+  /* Anna Caocci */
+  background-image: url("https://professoressaorru.files.wordpress.com/2014/03/img_5429.jpg");
+}
+
+.card3lettere {
+  /* Chiara Cappellacci */
+  background-image: url("http://s15.postimg.org/ykvhj9yi3/cap.jpg");
+}
+
+.card4lettere {
+  /* Lucia Fuoco */
+  background-image: url("https://pbs.twimg.com/profile_images/3565732033/7cc071beb67401a4f379f9245f5a8ca6_400x400.jpeg");
+}
+
+.card5lettere {
+  /* Anna Dessi */
+  background-image: url("http://s1.postimg.org/uvo2ifdwf/anna.jpg");
+}
+
+.card6lettere {
+  background-image: url("http://s17.postimg.org/720efh4kv/chichi.jpg");
+}
+
+.card7lettere {
+  background-image: url("http://s29.postimg.org/aj97mvc5z/gabriele.jpg");
+}
+
+.card8lettere {
+  background-image: url("http://s24.postimg.org/non236rgl/giovanni.jpg");
+}
+
+.card1new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card2new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card3new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card4new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card5new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card6new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card7new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card8new {
+  background-image: url("http://s3.postimg.org/jmvug7n8j/12539_1128828868050_6347189_n.jpg");
+}
+
+.card1dog {
+  background-image: url("http://churchfun.com/images/wp/puppy.jpg");
+}
+
+.card2dog {
+  background-image: url("http://bretcontreras.com/wp-content/uploads/dog.jpg");
+}
+
+.card3dog {
+  background-image: url("https://s3.amazonaws.com/rapgenius/1378688959_image.jpg");
+}
+
+.card4dog {
+  background-image: url("http://www.studentsoftheworld.info/sites/animals/img/48205_220px-Shetland_Sheepdog_600.jpg");
+}
+
+.card5dog {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/06/b6/1b/06b61b11424e8dbf76f9bcd41eb13681.jpg");
+}
+
+.card6dog {
+  background-image: url("http://m5.paperblog.com/i/49/496512/dog-breed-of-the-month-bernese-mountain-dog-a-L-3tMX6C.jpeg");
+}
+
+.card7dog {
+  background-image: url("http://cdn.resimkoy.net/2015/10/02/small_cutest-dog-breeds-home-dog-categories-different-cutest-dog-breeds.jpg");
+}
+
+.card8dog {
+  background-image: url("http://www.studentsoftheworld.info/sites/animals/img/48205_lakeland_terrier.jpg");
+}
+
+.hidden {
+  background-color: white;
+  background-image: none;
+}
+
+.paired {
+  border-color: gold;
+  cursor: default;
+}
