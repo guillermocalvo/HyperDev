@@ -7,12 +7,12 @@
 $(function() {
 
   console.log('hello world :o');
-
+  
   setInterval(step, 1000/60);
 
   $("canvas").on("mousemove", function(e) {
     var newY = event.pageY - $(this).offset().top;
-
+    
     // paddle y + hard-coded paddle height can't exceed hard-coded canvas height
     if (newY + 60 <= 320) {
       paddleY = newY;

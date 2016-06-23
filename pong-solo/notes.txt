@@ -1,0 +1,2 @@
+Would be nice to have a way to test web requests from the IDE, 
+like POST/GET, something simple like CURL
