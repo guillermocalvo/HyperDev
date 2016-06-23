@@ -207,7 +207,7 @@ module.exports = (app) ->
     #     isProject: true
     #   .then (projects) ->
     #     projects[0].users
-
+    
     # getProjectLikes: (uuid) ->
     #   db.find
     #     uuid: uuid
@@ -252,6 +252,6 @@ module.exports = (app) ->
 
   # Must be after other routes
   # Handle 404
-  app.use (req, res) ->
+  app.use (req, res) -> 
     res.status(404)
     res.render('404.html')

@@ -8,13 +8,13 @@ module.exports =
       description: null
       id: 1
     ,
-      name: 'Start by Remixing These'
+      name: 'Start by Remixing'
       metaName: 'getting-started'
-      img: 'https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3Ab0bac0a2-1470-4ff8-b72d-acc002ba0a16%2Fhdbook_small.png'
+      img: 'https://cdn.hyperdev.com/us-east-1%3Ab0bac0a2-1470-4ff8-b72d-acc002ba0a16%2Frecord%20player.svg'
       description: null
       id: 2
   ]
-
+  
   # sample projects fetched from id
   projects: -> [
       name: 'Memory!'
@@ -97,7 +97,7 @@ module.exports =
           avatar: 'https://avatars2.githubusercontent.com/u/10010598?v=3&s=48'
       ]
       categoryId: 2
-    ,
+    ,  
       name: 'React Tutorial'
       projectId: 7
       editorUrl: 'shade-king'
@@ -161,7 +161,7 @@ module.exports =
         name: 'garethx'
         avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'API Endpoint'
       projectId: 12
@@ -174,7 +174,7 @@ module.exports =
         name: 'garethx'
         avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'MongoDB Example'
       projectId: 13
@@ -200,7 +200,7 @@ module.exports =
           name: 'bigdogwillfeed'
           avatar: 'https://avatars3.githubusercontent.com/u/4453639?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'Persistence Demo using DynamoDB'
       projectId: 15
@@ -214,9 +214,9 @@ module.exports =
           avatar: 'https://avatars3.githubusercontent.com/u/578612?v=3&s=48'
         ,
           name: 'garethx'
-          avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'
+          avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'          
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'Backbone.js TodoMVC'
       projectId: 16
@@ -229,7 +229,7 @@ module.exports =
           name: 'garethx'
           avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'Test Before Deploy'
       projectId: 17
@@ -294,7 +294,7 @@ module.exports =
           name: 'garethx'
           avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'Trello Webhook Server'
       projectId: 22
@@ -307,7 +307,7 @@ module.exports =
           name: 'garethx'
           avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'
       ]
-      categoryId: 1
+      categoryId: 1  
     ,
       name: 'CoffeeScript, Jade & Stylus Sample'
       projectId: 23
@@ -320,7 +320,7 @@ module.exports =
           name: 'pketh'
           avatar: 'https://avatars2.githubusercontent.com/u/877072?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'Simply Done'
       projectId: 24
@@ -333,7 +333,7 @@ module.exports =
           name: 'enriquesanchez'
           avatar: 'https://avatars2.githubusercontent.com/u/3276087?v=3&s=48'
       ]
-      categoryId: 1
+      categoryId: 1 
     ,
       name: 'Web Scraper Sample'
       projectId: 25
@@ -346,7 +346,7 @@ module.exports =
           name: 'garethx'
           avatar: 'https://avatars3.githubusercontent.com/u/1830035?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'Bootstrap Geo Template'
       projectId: 26
@@ -359,7 +359,7 @@ module.exports =
           name: 'STRd6'
           avatar: 'https://avatars2.githubusercontent.com/u/18894?v=3&s=48'
       ]
-      categoryId: 2
+      categoryId: 2 
     ,
       name: 'Slack Bogan Ipsum Slash Command'
       projectId: 27
@@ -385,7 +385,7 @@ module.exports =
           name: 'jude'
           avatar: 'https://pbs.twimg.com/profile_images/627115681201430528/0rE2ZRqj.jpg'
       ]
-      categoryId: 1
+      categoryId: 1  
     ,
       name: 'Display Data from Excel'
       projectId: 29
@@ -398,7 +398,7 @@ module.exports =
           name: 'jude'
           avatar: 'https://pbs.twimg.com/profile_images/627115681201430528/0rE2ZRqj.jpg'
       ]
-      categoryId: 2
+      categoryId: 2  
     ,
       name: 'L-system Demo'
       projectId: 30
@@ -411,7 +411,7 @@ module.exports =
           name: 'STRd6'
           avatar: 'https://avatars2.githubusercontent.com/u/18894?v=3&s=48'
       ]
-      categoryId: 1
+      categoryId: 1 
     ,
       name: 'Slack Channel Sentiment Analysis'
       projectId: 31
@@ -424,10 +424,10 @@ module.exports =
           name: 'nancyhawa'
           avatar: 'https://avatars2.githubusercontent.com/u/10010598?v=3&s=48'
         ,
-          name: 'LouManglass'
-          avatar: 'https://avatars3.githubusercontent.com/u/241059?v=3&s=48'
+          name: 'LouManglass' 
+          avatar: 'https://avatars3.githubusercontent.com/u/241059?v=3&s=48'        
       ]
-      categoryId: 1
+      categoryId: 1 
     ,
       name: 'Trello Shopping List Generator'
       projectId: 32
@@ -437,8 +437,8 @@ module.exports =
       remixes: null
       description: "Auto-generate a shopping list from Trello recipe checklists"
       users: [
-          name: 'LouManglass'
-          avatar: 'https://avatars3.githubusercontent.com/u/241059?v=3&s=48'
+          name: 'LouManglass' 
+          avatar: 'https://avatars3.githubusercontent.com/u/241059?v=3&s=48'        
       ]
       categoryId: 1
     ,
@@ -454,5 +454,95 @@ module.exports =
           avatar: 'https://avatars2.githubusercontent.com/u/877072?v=3&s=48'
       ]
       categoryId: 1
-
+    ,
+      name: 'Sass Middleware Demo'
+      projectId: 34
+      editorUrl: 'spiral-haze'
+      appUrl: 'https://spiral-haze.hyperdev.space/'
+      likes: 7
+      remixes: null
+      description: "Example project showing how to use Sass middleware"
+      users: [
+          name: 'STRd6'
+          avatar: 'https://avatars2.githubusercontent.com/u/18894?v=3&s=48'
+      ]
+      categoryId: 2 
+    ,
+      name: 'Hoodie Starter Project'
+      projectId: 35
+      editorUrl: 'sulpher-fang'
+      appUrl: 'https://sulpher-fang.hyperdev.space/'
+      likes: 9
+      remixes: null
+      description: "Example project using Hoodie"
+      users: [
+          name: 'gr2m'
+          avatar: 'https://avatars2.githubusercontent.com/u/39992?v=3&s=48'
+      ]
+      categoryId: 2   
+    ,
+      name: 'Font Awesome Export tool'
+      projectId: 36
+      editorUrl: 'beryl-seed'
+      appUrl: 'https://beryl-seed.hyperdev.space/'
+      likes: 11
+      remixes: null
+      description: "Creates the mouse cursor and image code for Font Awesome icons"
+      users: [
+          name: 'olragon'
+          avatar: 'https://avatars2.githubusercontent.com/u/47636?v=3&s=48'
+      ]
+      categoryId: 1
+    ,
+      name: 'HipChat Add-on'
+      projectId: 37
+      editorUrl: 'walnut-braid'
+      appUrl: 'https://walnut-braid.hyperdev.space/'
+      likes: 5
+      remixes: null
+      description: "A fully functional HipChat add-on running on HyperDev"
+      users: [
+          name: 'rmanalan'
+          avatar: 'https://avatars2.githubusercontent.com/u/549?v=3&s=48'
+      ]
+      categoryId: 2
+    ,
+      name: 'Saving User Data with Stormpath'
+      projectId: 38
+      editorUrl: 'viridian-grass'
+      appUrl: 'https://viridian-grass.hyperdev.space/'
+      likes: 6
+      remixes: null
+      description: "An example showing how you can save user data using Stormpath"
+      users: [
+          name: 'edjiang'
+          avatar: 'https://avatars2.githubusercontent.com/u/918770?v=3&s=48'
+      ]
+      categoryId: 2 
+    ,
+      name: 'Processing.js Sketch'
+      projectId: 39
+      editorUrl: 'chocolate-panther'
+      appUrl: 'https://chocolate-panther.hyperdev.space/'
+      likes: 9
+      remixes: null
+      description: "A hypnotic processing.js sketch"
+      users: [
+          name: 'JosephLaurino'
+          avatar: 'https://avatars2.githubusercontent.com/u/755681?v=3&s=48'
+      ]
+      categoryId: 1
+    ,
+      name: 'Postcard Maker'
+      projectId: 40
+      editorUrl: 'time-mustang'
+      appUrl: 'https://time-mustang.hyperdev.space/'
+      likes: 19
+      remixes: null
+      description: "Upload an image and it'll create and post out a postcard"
+      users: [
+          name: 'margalit'
+          avatar: 'https://avatars2.githubusercontent.com/u/2268424?v=3&s=48'
+      ]
+      categoryId: 1       
   ]
