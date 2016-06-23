@@ -8,4 +8,6 @@
 
 To add auth, see [this](https://github.com/samcday/node-google-spreadsheets)
 
+There's a [walk-through blog post](https://hyperdev.com/blog/create-google-sheets-data-dashboard/) available that guides you through the code in this project.
+
 For more HyperDev examples, check out the [Gallery](https://hyperdev.com/community/)
