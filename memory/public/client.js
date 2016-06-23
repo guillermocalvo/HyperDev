@@ -24,9 +24,8 @@ function Card(number, board) {
     if (board.startTime() === null) {
       board.startTime(moment());
       board.elapsedInterval = setInterval(function () {
-        console.log("Hey");
-        board.elapsed(moment().subtract(board.startTime()).format("ss.S"));
-      }, 50);
+        board.elapsed(moment().subtract(board.startTime()).format("ss"));
+      }, 800);
     }
     
     force = force === undefined ? false : force;
