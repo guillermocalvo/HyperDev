@@ -1,0 +1,221 @@
+sans-serif = "Benton Sans", Helvetica, Sans-serif
+menlo = Menlo, Monaco, mono-space
+
+primary = #222
+secondary = #C3C3C3
+tertiary = #9B9B9B
+secondary-background = #83FFCD
+primary-background = #FFD1C7 
+link = #3652D3
+shadow = rgba(0, 0, 0, .2)
+caution = #fcf3b0
+input-focused = #d8f8ff
+error = #ff7967
+
+large-viewport = 1200px
+
+// GLOBALS
+
+html
+  font-size 62.5%
+  @media(min-width: large-viewport)
+    font-size: 68%
+
+body
+  color: primary
+  font-family: sans-serif
+  margin-top: 2rem
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+  background-color: primary-background
+
+main
+  margin-top: 1rem
+  max-width: 60rem
+  margin-left: auto
+  margin-right: auto
+  overflow: auto
+
+h1
+  font-size: 2.4rem
+  margin-bottom: 1rem
+  margin-top: 1.5rem
+
+h2
+  font-size: 1.8rem
+  margin-bottom: 1.8rem
+  line-height: 2.4rem
+
+h3
+  font-size: 1.6rem
+  font-weight: 600
+  margin-bottom: 0
+
+p
+  margin-left: 1rem
+  line-height: 2rem
+  font-size: 1.6rem
+
+.nav-link
+  margin-left: 1rem
+
+h1,
+h2,
+h3,
+p,
+.bird
+  max-width: 50rem
+
+section
+  h2
+    max-width: 55rem
+
+a
+  color: link
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+header,
+section,
+footer
+  margin-top: 5.5rem
+
+
+.logo
+  padding-bottom: 1rem
+
+header
+  h2
+    margin-bottom: 3.5rem
+
+.bird
+  display: inline-block
+  width: 7.5rem
+  vertical-align: middle
+
+.cta
+  margin-top: 1.5rem
+
+button
+  color: primary
+  font-size: 1.6rem
+  font-weight: 600
+  border: solid primary .2rem
+  display: inline-block
+  border-radius: 5px
+  padding: .6rem 1.2rem
+  cursor: pointer
+  background-color: secondary-background
+  box-shadow: 4px 4px 0 primary
+  margin-bottom: 1rem
+  &:hover
+    box-shadow: 2px 2px 0 primary
+    position: relative;
+    top: 2px;
+    left: 2px;
+  &:active
+    box-shadow: none
+
+.button-secondary
+  background-color: white
+  margin-right: 1rem
+  margin-bottom: 1rem
+  &:hover
+    background-color: secondary-background-hover
+
+.emphasis
+  font-weight: 600
+
+footer
+  border-top: 1px solid tertiary
+  padding-top: 2rem
+  margin-top: 5rem
+  margin-bottom: 2rem
+  p
+    margin-top: 1rem
+    margin-left: initial
+  .bird
+    display: inline-block
+    vertical-align: middle
+    width: 3.5rem
+    margin-right: .5rem
+
+span.hero
+  p
+    margin-left: 0
+
+.screenshot
+  max-width: 95%
+  height: auto
+  display: block
+  border-radius: 5px
+  box-shadow: 8px 6px 0 shadow
+  margin-bottom: 1rem
+  canvas,
+  img
+    max-width: 100%
+    border-radius: 5px
+  .gifffer-play-button
+    top: 35%
+    left: 45%
+
+.illustration
+  display: inline
+  margin-bottom: 1rem
+  margin-left: 1rem
+  max-width: 90%
+
+.beta-notice
+  background-color: caution
+  color: primary
+  font-size: 1.4rem
+  font-weight: bold
+  display: inline-block
+  padding: .3rem .5rem
+  padding-top: .4rem
+
+input
+  font-size: 1.6rem
+  border: 0
+  border-bottom: 2px solid primary
+  padding: 0.5rem
+  margin-right: 0.6rem
+  padding-top: 0.8rem
+  padding-left: 0.5rem
+  padding-bottom: 0.9rem
+  width: 25.5rem
+  border-radius: 0
+  &:focus
+    outline: none
+    background-color: input-focused
+
+.error
+  background-color: error
+  &::placeholder
+    color: primary-background
+  &:focus
+    background-color: error
+
+// .waiting
+
+// .fogcreek
+//   margin-left: 0.3rem
+//   position: relative
+.trello
+  width: 10%
+.stack
+  width: 9%
+
+.hidden
+  display: none;
+.form-submitted
+  font-weight: 600
+  max-width: 50rem
+  background-color: #C1FFE6
+  padding: 0.3rem 0.5rem
+  padding-top: 0.4rem
+  margin-top: 1rem
+  p
+    margin: 0
+    display: inline-block

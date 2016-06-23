@@ -1,0 +1,67 @@
+include head
+
+body
+
+  main
+
+    include header
+
+    section
+      h2 Typing is Deploying – The fastest way to build
+      - screenshot = "https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A044a595b-d397-4910-9ab0-e01def5c7dd4%2FtypingDeployingFinalOptimized.gif"
+      img.screenshot(data-gifffer=screenshot)
+      p The apps you create are instantly live, hosted by us, and always up to date with your latest changes.
+      p Build products, prototype ideas, and hack solutions to problems.
+
+    section
+      h2 No Setup Required – The quickest way to get started
+      - screenshot = "https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A044a595b-d397-4910-9ab0-e01def5c7dd4%2Fhero1.gif"
+      img.screenshot(data-gifffer=screenshot)
+      p There's no need to set up your environment, configure your build pipeline, memorize Git, or manually deploy updates.
+      p Perfect for Hackathons, code tests, and live examples in docs.
+
+    section
+      h2 Collaborate on Code – A flexible way to code together
+      - screenshot = "https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A044a595b-d397-4910-9ab0-e01def5c7dd4%2FinviteCollabFinalOptimized_smallFixed.gif"
+      img.screenshot(data-gifffer=screenshot)
+      p Invite teammates to your project, collaborate on code together and see changes as they're made.
+      p Great for code reviews, pair programming, live coding, and teaching.
+
+    section
+      h2 Remix Your Projects - An efficient way to create and learn
+      - screenshot = "https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A044a595b-d397-4910-9ab0-e01def5c7dd4%2FremixFinalOptimized.gif"
+      img.screenshot(data-gifffer=screenshot)
+      p Get started quickly by remixing existing
+        span= " "
+        a(href=communityProjects, onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/gallery/inline-link'});") 
+          span= "community projects"
+        span= " "
+        span and editing them to fit your vision.
+      p Remixing makes using new frameworks and learning to code a snap.
+
+    section
+      h2 Share Your Creations – An easy way to get help or feedback
+      - screenshot = "https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A044a595b-d397-4910-9ab0-e01def5c7dd4%2FshareProjectFinalOptimized_small.gif"
+      img.screenshot(data-gifffer=screenshot)
+      p Every project gets a URL for editing and viewing. Share your code or your creations.
+      p Sharing projects is as easy as showing a cat gif to a friend.
+
+    section
+      h2 Made By Fog Creek
+      - logoGroup = "https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3A044a595b-d397-4910-9ab0-e01def5c7dd4%2Flogogroup.svg"
+      img.illustration(src=logoGroup)
+      p You might know us for making Trello, FogBugz, and co-creating Stack Overflow. We're a friendly, self-funded company that's been helping developers make stuff for over 15 years.
+  
+    section
+      h2 Why Did We Make HyperDev?
+      img.illustration(width=107 height=76 src="https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1:0ec6187f-5082-432a-a8dc-1ba9b7e1e94e/coffee-time.svg")
+      p Before getting to 'Hello World', developers have to work through the complexity of configuring servers, running shell commands, compiling files, setting up build pipelines and mastering version control systems.
+      p This complexity slows us down and holds us back. Apps that solve real problems – or just make us smile – often don't get written because it can be too hard to get started. Existing tools and technologies that are supposed to support us in creating web apps can be a barrier to building them.
+
+    section
+      // h2 HyperDev removes the barriers to building, so you're free to just start coding
+      h2 TL;DR - HyperDev removes the barriers to building
+      - ga = 'button2'
+      include cta
+
+    include footer

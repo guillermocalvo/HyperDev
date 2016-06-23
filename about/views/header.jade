@@ -1,0 +1,22 @@
+// ol.nav
+//    li community projects
+//    li blog
+
+header
+  a(href="/")
+    - bird = "https://hyperdev.com/images/logos/hyperdev/bird.svg"
+    img(class="bird" width=75 height=62 src=bird)
+
+  h1
+    a(href="/", onclick="javascript: ga('send', {hitType: 'pageview',page: '/internal-links/homepage/h1'});") 
+      span HyperDev
+    span  is the developer playground for building full-stack web apps, fast
+
+  span.hero
+    p Combining automated deployment, instant hosting and collaborative editing, HyperDev gets you straight to coding.
+    p.emphasis You just code. It just runs.
+
+    p.beta-notice We're in beta
+
+    - ga = 'button1'
+    include cta
