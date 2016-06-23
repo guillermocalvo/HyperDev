@@ -1,0 +1,24 @@
+
+Tree Guy
+
+{
+  "initial": "IA",
+  "rules": {
+    "A": "rB[-gA]+gA",
+    "B": "B.B"
+  },
+  "commands": {
+    "I": ["moveTo", 0, 0],
+    "A": ["forward", 3],
+    "B": ["forward", 2],
+    ".": ["left", 1],
+    "+": ["left", 20],
+    "-": ["right", 60],
+    "r": ["style", "red"],
+    "g": ["style", "green"],
+    "b": ["style", "blue"],
+    "[": ["push"],
+    "]": ["pop"]
+  }
+}
+
