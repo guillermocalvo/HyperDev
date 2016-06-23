@@ -1,0 +1,15 @@
+/* styles */
+/* called by your view template */
+
+/* p.s. vendor prefixes are added automatically */
+
+* {
+  box-sizing: border-box;
+}
+
+#scene {
+  background-color:black;
+  width: 100%;
+  height: 100%;
+  position:fixed;top:0;left:0;
+}
