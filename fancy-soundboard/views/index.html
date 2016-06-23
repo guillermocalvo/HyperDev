@@ -1,0 +1,45 @@
+<!-- view template -->
+<!-- called from your routes in server.js -->
+
+<!-- templating docs: http://mozilla.github.io/nunjucks/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta name="description" content="What if Donald Trump wrote Software? -- A cool thing made with HyperWeb">
+    <link id="favicon" rel="icon" href="https://hyperweb.space/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="trump">
+        <div class="play">
+          <audio src="https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3Acd797373-3031-4187-92e1-68c2994c5dc9%2Fhmm-thats-strange.mp3"></audio>
+        </div>
+      </div>
+      <div class="trump">
+        <div class="play">
+          <audio src="https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3Acd797373-3031-4187-92e1-68c2994c5dc9%2Fgreat-success.mp3"></audio>
+        </div>
+      </div>
+      <div class="trump">
+        <div class="play">
+          <audio src="https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3Acd797373-3031-4187-92e1-68c2994c5dc9%2Ffantastic.mp3"></audio>
+        </div>
+      </div>
+      <div class="trump">
+        <div class="play">
+          <audio src="https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3Acd797373-3031-4187-92e1-68c2994c5dc9%2Fblast-the-hell-out-of-it.mp3"></audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

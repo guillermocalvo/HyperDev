@@ -1,0 +1,68 @@
+/* styles */
+/* called by your view template */
+
+/* p.s. vendor prefixes are added automatically */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  /*background-image: url('');*/
+  margin: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: pink;
+}
+
+h3 {
+  color: lightseagreen;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  border: 1px solid #C3C3C3;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  margin-top: 20px;
+}
+
+a + a {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  background-color: lightcyan;
+  flex-wrap: wrap;
+}
+
+.trump {
+  background-image: url("https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3Acd797373-3031-4187-92e1-68c2994c5dc9%2Ftrump.png");
+  background-size: cover;
+  margin: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.play {
+  opacity: 0.50;
+  background-image: url("https://s3.amazonaws.com/hyperweb-editor-assets/us-east-1%3Acd797373-3031-4187-92e1-68c2994c5dc9%2Fplay.jpg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  float: right;
+  cursor: pointer;
+}
