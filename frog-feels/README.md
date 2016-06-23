@@ -25,30 +25,28 @@ on save, I save the drawing and the feeling associated with it
 then uncomment out `/last-week` and generate the email to send out at the end of the week. manual process for basic broken drawing check. I could do this on a schedule but this is easier and safer. And maybe more fulfilling.
 
 ## TODO
-
-- email formatted with proper styles/layout
+- template vars to ALL_CAPS
 - frogfeels.com weekly 💕s [img1. img2, ... img5]
-
-- header: seo meta tag stuff (twitter / fb)
-
-- fix iphone (320px) layout
-- fix touchstart draw
+- /last-week uses hardcoded txt logo FROG_STATIC
+- admin text-field on /last-week
+- email formatted with proper styles/layout
 
 
 later features:
 ---------------
+
 - add kidpixy sound effects (save success, refreshing, drawing(mousedown on canvas that repeats), pick color)
 
-- ? show last weeks drawings on page (see `SCRAPS.md`)
+- add imessages style celebration streamers canvas/bk on drawing complete (adds that extra bit of short term endorphin rush on completion)
+
 
 refactor cleanup:
 -----------------
+
+- fix race condition w db not loading/scraping in time of page load (make it a decoupled service, w transparent loading)
+
 - clean up the class hide/show stuff to use clean code
 
 - update css/jade class names to match simplified app
 
-- quickfix async scrapper issue (meh) - possibly just use fallback string, and manually periodically change it
-
 - make mongo drawing find call more efficient
-
-- ?smaller grid? (see existing media queries, see common device size usage scenarios (use responsive design view))

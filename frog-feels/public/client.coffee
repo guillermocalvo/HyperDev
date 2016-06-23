@@ -13,6 +13,7 @@ updateFeelsColor = () ->
   $('.feels').css('color', color)
 
 selectColor = (context) ->
+  console.log 'selectColor'
   color = $(context).css('background-color')
   highlightActivePaletteColor(context)
 
@@ -41,7 +42,8 @@ newPalette = () ->
 newPalette()
 
 
-$('.color').not('.shuffle').click ->
+$('.color').on 'click touchstart', ->
+  console.log 'color click'
   context = @
   selectColor(context)
 
@@ -67,7 +69,8 @@ $(document).keypress (key) ->
   else if key.which is 55
     $('.shuffle').trigger('click')
 
-$('.shuffle').click ->
+$('.shuffle').on 'click touchstart', ->
+  console.log 'shuff;le'
   newPalette()
 
 $('.shuffle').hover ->
@@ -91,18 +94,37 @@ $('.shuffle').hover ->
 
 # DRAWING
 
-$('.pixel').mousedown ->
+$('.pixel').on "mousedown touchstart", (event) ->
+  console.log 'hiyo'
   color = $('.color.active').css('background-color')
   pressingDown = true
   $(@).css("background-color", color)
   unless color is 'black'
     canvasChanged = true
+
 $(document).mouseup ->
   pressingDown = false
-$('.pixel').mousemove ->
+
+$('.pixel').on "mousemove", (event) ->
   color = $('.color.active').css('background-color')
   if pressingDown
-    $(@).css("background-color", color)
+    $(event.target).css("background-color", color)
+
+
+$('.pixel').on "touchmove", (event) ->
+  color = $('.color.active').css('background-color')
+  console.log 'hi'
+  if pressingDown
+    event.preventDefault()
+    myLocation = event.originalEvent.changedTouches[0]
+    realTarget = document.elementFromPoint(myLocation.clientX, myLocation.clientY) or @
+    console.log realTarget
+    if $(realTarget).hasClass 'pixel'
+      $(realTarget).css("background-color", color)
+
+
+
+
 
 
 # SAVING
@@ -185,7 +207,8 @@ saveCanvas = () ->
       $('.drawing').hide()
       $('#canvas').show()
 
-$('.save-button').click ->
+$('.save-button').on 'click touchstart', ->
+  console.log 'save button'
   if canvasChanged
     $(this).addClass 'hidden'
     $('.saving-button').removeClass 'hidden'
@@ -213,5 +236,6 @@ $('.sign-up form').submit ->
 #   context.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
 #   $('.pixel').css('background-color', '')
 
-$('.draw-another').click ->
+$('.draw-another').on 'click touchstart', ->
+  console.log 'another'
   location.reload()

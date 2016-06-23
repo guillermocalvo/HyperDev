@@ -32,7 +32,7 @@ drawingsGroupedByFeeling = []
 # lastWeeksFeelings = []
 subscribedUsers = []
 
-drawingMethods =
+self =
   
   connectToDB: ->
     db.getCollectionNames (error, collections) ->
@@ -61,8 +61,8 @@ drawingMethods =
     filename = "#{uuid.v4()}.png"
     path = date + filename
     async.series [
-      async.asyncify drawingMethods.saveDrawingToS3 path, drawingBuffer
-      async.asyncify drawingMethods.saveDrawingInfoToDB path, feeling
+      async.asyncify self.saveDrawingToS3 path, drawingBuffer
+      async.asyncify self.saveDrawingInfoToDB path, feeling
     ], ->
       response.send
         code: 200
@@ -81,20 +81,21 @@ drawingMethods =
 
   generateWeeklyEmail: (response) -> 
     async.waterfall [
-      drawingMethods.getLastWeekDrawings
-      drawingMethods.getDrawingsGroupedByFeelings
-      drawingMethods.getUsers
+      self.getLastWeekDrawings
+      self.getDrawingsGroupedByFeelings
+      self.getUsers
     ], (error, result) ->
       if error
         console.log error
       response.render 'last-week.jade',
         feelingGroups: drawingsGroupedByFeeling
+        admin: false
       ,
       (error, html) ->
         if error
           console.log error
         html = juice html, {applyWidthAttributes: true}
-        drawingMethods.sendMail html
+        self.sendMail html
   
   sendMail: (html) ->
     sendgrid.send
@@ -112,9 +113,9 @@ drawingMethods =
 
   getLastWeek: (response) ->
     async.waterfall [
-      drawingMethods.getLastWeekDrawings
-      drawingMethods.getDrawingsGroupedByFeelings
-      drawingMethods.getUsers
+      self.getLastWeekDrawings
+      self.getDrawingsGroupedByFeelings
+      self.getUsers
     ], (error, result) ->
       if error
         console.log error
@@ -128,6 +129,7 @@ drawingMethods =
     lastWeeksDrawings = []
     lastWeeksFeelings = []
     lastWeek = "#{moment().year()}-#{moment().week() - 1}"
+    # thisWeek = "#{moment().year()}-#{moment().week() - 0}"
     db.collection('Drawings').find (error, drawings) ->
       for drawing in drawings
         if drawing.path.indexOf(lastWeek) > -1
@@ -167,4 +169,4 @@ drawingMethods =
         code: 200
 
 
-module.exports = drawingMethods
+module.exports = self
