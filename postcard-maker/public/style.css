@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #222;
+  background-image: url('https://cdn.hyperdev.com/us-east-1%3Afd5b6c61-eb84-4bb2-acbc-de9c5b61f568%2Fbg.png');
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: 10vh auto;
+}
+
+.Postcard__wrapper {
+  margin: auto;
+}
+
+.Postcard__actions {
+  width: 100%;
+  margin-top: 2vw;
+  text-align: center;
+}
+
+.Plane {
+  margin: auto;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.Image, .Message {
+  position: absolute;
+  background: #fff;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
+  border-shadow: 0 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.1);
+  border-radius: 0.1vw;
+  transition: transform 0.85s cubic-bezier(.28,.64,0,1);
+}
+
+.Image, .is-flipped .Message {
+  transform: rotateY(0deg); 
+}
+
+.is-flipped .Image {
+  transform: rotateY(180deg);
+}
+
+.ImagePreview,
+.ImagePositioner,
+.ImageInput,
+.ImageInput__wrapper,
+.Image,
+.ImagePreview:after,
+.Message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.ImageInput {
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.ImagePreview:after {
+  content: "";
+  display: block;
+}
+
+.ImageInput__wrapper {
+  display: flex;
+  background: url('https://cdn.hyperdev.com/us-east-1%3Afd5b6c61-eb84-4bb2-acbc-de9c5b61f568%2Fupload.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ImageInput__message {
+  text-align: center;
+  margin: auto;
+  padding: 2vw;
+  color: #222;
+}
+
+.ImageInput__headline {
+  font-size: 2vw;
+  font-weight: 500;
+  color: #444;
+}
+
+.ImageInput__text {
+  font-size: 1.5vw;
+}
+
+.ImagePreview__image {
+  position: absolute;
+  background-size: cover;
+}
+
+.ImagePositioner {
+  cursor: pointer;
+}
+
+.Postcard__actions__flip,
+.Postcard__actions__clear {
+  height: 2.5vw;
+  cursor: pointer;
+  width: 2.5vw;
+  text-indent: -9999px;
+  border: 0;
+  background-color: transparent;
+  color: transparent;
+  background-size: contain;
+  background-position: center;
+  margin: 0 1vw;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.hyperdev.com/us-east-1%3Afd5b6c61-eb84-4bb2-acbc-de9c5b61f568%2Freplay.png");
+}
+
+.Postcard__actions__clear {
+  background-image: url("https://cdn.hyperdev.com/us-east-1%3Afd5b6c61-eb84-4bb2-acbc-de9c5b61f568%2Ftrash.png");
+}
+
+.Message {
+  transform: rotateY(-180deg);
+  background-image: url('https://cdn.hyperdev.com/us-east-1%3Afd5b6c61-eb84-4bb2-acbc-de9c5b61f568%2Fpostcard-border.png');
+  background-size: cover;
+  background-position: center;
+  padding: 7.5% 10%;
+}
+
+.Message__wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.Message__line {
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 1.5vw;
+}
+
+.Form {
+  width: 100%;
+  min-height: 100vh;
+  padding-right: 5%;
+  display: flex;
+}
+
+.Form__wrapper {
+  margin: auto;
+  padding-top: 5vw;
+  padding-bottom: 4vw;
+  overflow: hidden;
+}
+
+.Form__fields {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1vw;
+}
+
+.Form__hint {
+  float: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 1.5vw;
+  padding: 0.75vw;
+  margin-left: 0.5vw;
+} 
+
+.Form__submit {
+  background: #5959FF;
+  float: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1.5vw;
+  padding: 0.75vw;
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: none;
+  -webkit-filter: grayscale(0);
+}
+
+.Form__submit.disabled {
+  pointer-events: none;
+  cursor: initial;
+  opacity: 0.5;
+  -webkit-filter: grayscale(1);
+}
+
+.Form__fields:after {
+  content: "▾";
+  display: block;
+  position: absolute;
+  bottom: 1vw;
+  right: 1.5vw;
+  font-size: 2vw;
+  pointer-events: none;
+}
+
+.Input {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #fafafa;
+  display: block;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+  height: 4.3vw;
+  line-height: 4.3vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100%;
+  border: none;
+  float: left;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.Input:last-child {
+  margin-bottom: 0;
+  border-radius: 0;
+  position: relative;
+}
+
+option {
+  padding: 0;
+  margin: 0;
+}
+
+.Submitter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background: rgba(255,255,255,0.8);
+  z-index: 2;
+  border: 1vw solid #5959FF;
+}
+
+.Submitter__wrapper {
+  margin: auto;
+  color: white;
+  font-size: 2vw;
+  color: #fff;
+  font-weight: 500;
+}
+
+.Submitter__sending,
+.Submitter__sent{
+  padding: 1vw;
+  background: #5959FF;
+}
+
+.Submitter__error {
+  padding: 1vw;
+  background: #FF5959;
+}
+
+.footer {
+  font-size: 1.5vw;
+  color: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 2vw;
+}
+
+.footer a {
+  color: white;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+@media only screen and (orientation : portrait) {
+  .footer {
+    font-size: 3vw;
+    padding: 4vw;
+    position: relative;
+  }
+
+  .Plane {
+    width: 90vw;
+    height: 60vw;
+    margin-top: 5vh;
+    perspective: 150vw;
+  }
+  
+  .Postcard__actions {
+    width: 90vw;
+    position: relative;
+    margin: auto;
+    margin-top: 4vw;
+  }
+  
+  .Postcard__actions__flip,
+  .Postcard__actions__clear {
+    height: 5vw;
+    width: 5vw;
+    margin: 0 2vw;
+  }
+  
+  .Form {
+    width: 90vw;
+    margin: auto;
+    min-height: 0;
+    padding-right: 0;
+    display: flex;
+  }
+  
+  .Form__wrapper {
+    margin: auto;
+    padding-top: 5vw;
+    padding-bottom: 4vw;
+    overflow: hidden;
+  }
+  
+  .Form__fields {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1vw;
+  }
+  
+  .Form__fields:after {
+    bottom: 2vw;
+    right: 2vw;
+    font-size: 4vw;
+  }
+
+  .Input {
+    margin-bottom: 2vw;
+    font-size: 4.5vw;
+    height: 12.9vw;
+    line-height: 12.9vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    width: 100%;
+    border: none;
+    float: left;
+    -webkit-appearance: none;
+  }
+  
+  .Form__submit,
+  .Form__hint{
+    font-size: 4vw;
+    padding: 3vw;
+  }
+  
+  .Form__hint {
+    padding: 3.5vw;
+  }
+
+  .Form__fields {
+    margin-bottom: 2vw;
+  }
+  
+  .Submitter__wrapper {
+    font-size: 4vw;
+  }
+  
+  .Submitter__sending,
+  .Submitter__sent,
+  .Submitter__error {
+    padding: 2vw;
+  }
+  
+  .ImageInput__headline {
+    font-size: 4vw;
+  }
+  
+  .ImageInput__text {
+    font-size: 3vw;
+  }
+  
+  .Message__line {
+    font-size: 2vw;
+    height: 3vw;
+  }
+
+}
+
+@media only screen and (orientation : landscape) {
+  .Plane {
+    width: 45vw;
+    height: 30vw;
+  }
+  .Message__byline {
+    font-size: 2.5vw;
+  }
+  .Message__headline {
+    font-size: 4vw;
+    height: 6vw;
+  }
+  .Postcard {
+    position: fixed;
+    left: 0;
+    width: 55%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+  }
+  .Form {
+    padding-left: 55%;
+  }
+}
