@@ -1,0 +1,50 @@
+<div class="modal-header">
+    <h3 class="modal-title">Export icon {{ icon.name }} <i class="{{ icon.icon }}"></i> </h3>
+</div>
+<div class="modal-body">
+  
+  <div class="row">
+    <div class="col-md-12 form-inline">
+      Font size: <input ng-model="options.size" type="number" placeholder="size" class="form-control" style="width: 70px;">
+      Font color: <input ng-model="options.color" type="color" placeholder="color" class="form-control" style="width: 70px;">
+      Image width: <input ng-model="options.width" type="number" placeholder="width" class="form-control" style="width: 70px;">
+      Image height: <input ng-model="options.height" type="number" placeholder="height" class="form-control" style="width: 70px;">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <div class="form-group">
+        <label>CSS Cursor <small class="text-muted">Copy css code below, replace .selector with your selector.</small></label>
+        <textarea class="form-control" rows="3">
+.selector {
+  cursor: url({{ icon.uri }}), auto;
+}
+        </textarea>
+        <hr>
+        <div style="width: 100%; height: 50px; cursor: url({{icon.uri}}), auto; border: 1px solid #cacaca; padding: 5px;">
+          Mouse over me ...
+        </div>
+      </div>      
+    </div>
+
+    <div class="col-md-6 col-sm-6">
+      <div class="form-group">
+        <label>Inline image <small class="text-muted">Copy html code below.</small></label>
+        <textarea class="form-control" rows="3">
+<img src="{{ icon.uri }}">
+        </textarea>
+        <hr>
+        <div style="width: 100%; height: 50px; border: 1px solid #cacaca; padding: 5px;">
+          <img ng-src="{{ icon.uri }}">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>
