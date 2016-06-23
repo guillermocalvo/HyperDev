@@ -24,7 +24,7 @@ Slack integration point, where we receive the sentiment. Slack sends a token in 
 
 ##### GET /sentiments
 
-Gets the current list of sentiments
+Gets the current list of sentiments 
 
 ##### DELETE /sentiments/delete/<token>
 
