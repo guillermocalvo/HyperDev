@@ -10,7 +10,7 @@
 
 - TRELLO_API_KEY=your Trello API key from https://trello.com/app-key
 
-- TRELLO_API_TOKEN=your Trello API token, generate on https://trello.com/app-key
+- TRELLO_API_TOKEN=your Trello API token, generate on https://trello.com/app-key 
 
 - TRELLO_CLIENT_SECRET=your Trello client secret from https://trello.com/app-key
 
@@ -18,4 +18,4 @@
 
 - MODEL_ID=Trello model ID, for details see https://developers.trello.com/get-started/start-building e.g. xxxxxxxxxxxxxxxxxxxxxxxx
 
-For more HyperDev examples, check out the [Gallery](https://hyperdev.com/community/)
+For more HyperDev examples, check out the [Gallery](https://cosmic-flower.hyperdev.space/)
